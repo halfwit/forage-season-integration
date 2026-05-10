@@ -1,0 +1,12 @@
+{
+  "domain": "forage_season",
+  "name": "Forage Season",
+  "version": "0.1.0",
+  "documentation": "https://github.com/yourusername/forage-season",
+  "issue_tracker": "https://github.com/yourusername/forage-season/issues",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": [],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}

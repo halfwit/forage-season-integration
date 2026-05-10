@@ -1,0 +1,59 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Forage Season Setup",
+        "description": "Connects to the iNaturalist '{project}' project to show edible plants and fungi in season near you. Latitude and longitude are pre-filled from your Home Assistant home location.",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "radius": "Search radius (km)",
+          "min_observations": "Minimum observations to count as 'in season'",
+          "max_species": "Maximum number of species to track"
+        },
+        "data_description": {
+          "radius": "How far from your location to search, in kilometres (5–500).",
+          "min_observations": "Species with fewer historical observations in the current month will be ignored. Raise this to reduce noise.",
+          "max_species": "Caps the number of sensor entities created. Species are ranked by observation count, so the most commonly found ones are kept."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "A Forage Season entry for this location already exists."
+    },
+    "error": {
+      "unknown": "An unexpected error occurred. Check the Home Assistant logs for details."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Forage Season Options",
+        "description": "Adjust search parameters. Changes take effect on the next daily refresh, or immediately after reloading the integration.",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "radius": "Search radius (km)",
+          "min_observations": "Minimum observations to count as 'in season'",
+          "max_species": "Maximum number of species to track"
+        },
+        "data_description": {
+          "radius": "How far from your location to search, in kilometres (5–500).",
+          "min_observations": "Species with fewer historical observations in the current month will be ignored.",
+          "max_species": "Caps the number of sensor entities created."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "forage_species": {
+        "state": {
+          "in_season": "In Season",
+          "out_of_season": "Out of Season",
+          "unknown": "Unknown"
+        }
+      }
+    }
+  }
+}

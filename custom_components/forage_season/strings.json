@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Forage Season Setup",
+        "description": "Connects to iNaturalist's '{project}' project to show edible plants and fungi in season near you.",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "radius": "Search radius (km)",
+          "min_observations": "Minimum observations to count as 'in season'",
+          "max_species": "Maximum species to track"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This location is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Forage Season Options",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "radius": "Search radius (km)",
+          "min_observations": "Minimum observations to count as 'in season'",
+          "max_species": "Maximum species to track"
+        }
+      }
+    }
+  }
+}
