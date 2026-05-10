@@ -38,7 +38,7 @@ On each daily refresh the integration calls the iNaturalist API for research-gra
 Copy `custom_components/forage_season/` into your `<config>/custom_components/` directory and restart.
 
 > **Lovelace cards** are in a separate repo:
-> [forage-season-card](https://github.com/yourusername/forage-season-card)
+> [forage-season-card](https://github.com/halfwit/forage-season-card)
 
 ---
 
